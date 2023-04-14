@@ -66,23 +66,22 @@ const ring = () => {
     audio.play();
 }
 
-document.addEventListener('keypress', (e) => {
-    key.textContent = e.key;
+// document.addEventListener('keypress', (e) => {
+//     key.textContent = e.key;
 
-    if (e.key === "j") {
-        keypressContainer.style.background = "teal";
-        } else {
-        keypressContainer.style.background= "brown";
-    }
-    ring.remove ();
+//     if (e.key === "j") {
+//         keypressContainer.style.background = "teal";
+//         } else {
+//         keypressContainer.style.background= "brown";
+//     }
+//     ring();
 
-});
+// });
 
 // -----------------------------------------------------------------------
 const nav = document.querySelector("nav");
 
     window.addEventListener("scroll", () => {
-        console.log(window.scrollY);
 
         if(window.scrollY > 120) {
             nav.style.top = 0;
@@ -122,9 +121,9 @@ form.addEventListener('submit', (e) => {
 
 // --------------------------------------------------------------------------
 
-window.addEventListener("load", () => {
-    console.log("document chargé");
-})
+// window.addEventListener("load", () => {
+//     console.log("document chargé");
+// })
 
 // -------------------------------------------------------------------------
 const boxes = document.querySelectorAll(".box");
@@ -137,3 +136,69 @@ boxes.forEach((box) => {
 
 // ------------------------------------------------------------------------
 // addEventListern VS onClick
+
+// document.body.onclick = () => {
+//     console.log("click");
+// };
+
+// document.body.addEventListener('click', () => {
+//     console.log('click 1!');
+// }, false);
+
+// document.body.addEventListener('click', () => {
+//     console.log('click 2!');
+// }, true);
+
+// ------------------------------------------------------------------------
+// questionContainer.addEventListener('click', (e) => {
+//     alert("test");
+//     e.stopPropagation();
+// });
+
+// -----------------------------------------------------------------------
+// BOM
+
+// console.log(window.innerHeight);
+// console.log(window.scrollY);
+
+// window.open('http://google.com', "cours js", "height=600, width=800");
+
+// window.close()
+
+// alert("hello");
+btn2.addEventListener('click', () => {
+    confirm("voulez");
+});
+
+let answer = "";
+
+btn1.addEventListener('click', () => {
+    answer =prompt("entrez");
+
+questionContainer.innerHTML = "<h3> Bravo" + answer + "</h3>";
+});
+
+setTimeout(() => {
+    questionContainer.style.borderRadius = "300px";
+}, 2000);
+
+// let interval = setInterval(() => {
+//     document.body.innerHTML +=
+//     "<div class='box'><h2>Nouvelle boite !</h2></div>";
+// }, 1000);
+
+// document.body.addEventListener("click", () => {
+//     clearInterval(interval);
+// });
+
+// console.log(navigator.userAgent);
+
+// ------------------------------------------------------------------------
+
+// setProperty
+
+
+window.addEventListener('mousemove', (e) => {
+    nav.style.setProperty("--x", e.layerX + "px");
+    nav.style.setProperty("--y", e.layerY + "px");
+});
