@@ -133,3 +133,59 @@
 
 // toto (prompt ("Veuillez entrer un nombre") * 1)
 
+// créer une fonction qui permet de savoir si un mot est un palindrome - kayak - isPalindrome - split, reverse, join, toUpperCase
+
+// function isPalindrome (word) {
+// const letters = word.split('')
+// letters.reverse ()
+// const reverseWord = letters.join ('')
+// return word.toUpperCase() === reverseWord.toUpperCase()
+// }
+
+
+
+// console.log(isPalindrom('kayak')) // true
+// console.log(isPalindrom('SOS')) // true
+// console.log(isPalindrom('Kayak')) // true
+// console.log(isPalindrom('Bonjour')) // false
+
+// tableau des élèves - moyenne des notes de chaucn des élèves, organsier les élèves en fonction de la moyenne plus élevé, afficher console top 3 des élèves
+
+
+// const students = [
+//     {
+//         name : 'John'
+//         notes : [1, 20, 14, 12]
+//     },
+//     {
+//         name: 'Jane'
+//         notes : [2, 15, 4, 8]
+//     },
+//     {
+//         name : 'Sophie'
+//         notes: [17, 1, 2, 5]
+//     },
+
+//     {
+//         name: 'Charles'
+//         notes: [7, 8, 9, 15]
+//     }
+// ]
+
+
+
+// const moyenne = (notes) => {
+//     let sum = 0
+//     for (let note of notes) {
+//         sum = sum + note
+//     }
+//     return sum / notes.length
+// }
+
+// const compareStudent = (a, b) => {
+//     return a.moyenne - b.moyenne
+// }
+
+// for (let student of students) {
+//     student.moyenne = moyenne(student.notes)
+// }
