@@ -105,8 +105,8 @@ button {
   border-right: 3px solid yellow;
   transition: 0.2s;
   cursor: pointer;
-  
 }
+
 button:hover {
   border: 2px solid yellow;
   border-bottom: 3px solid #accbee;
@@ -114,6 +114,12 @@ button:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.32);
   transform: translateX(3px);
 }
+
 button:active {
   transform: scale(1.05);
+}
+
+#space-buttons {
+  display: flex;
+  justify-content: space-around;
 }
