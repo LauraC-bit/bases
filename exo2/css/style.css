@@ -1,0 +1,59 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  padding: 16px;
+  font-size: calc(1.2rem + 0.6vmin);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+h2 {
+  color: indianred;
+}
+
+.blue {
+  color: skyblue;
+  font-weight: 700;
+}
+
+ul :not(.second) > li:nth-child(3) span {
+  color: skyblue;
+  font-weight: 700;
+}
+
+ul :nth-child(6) span {
+  color: indianred;
+}
+
+.size {
+  font-size: 2.4rem;
+}
+
+.italique {
+  font-style: italic;
+}
+
+ul :nth-child(10) span {
+  color: green;
+}
+
+a {
+  color: hsl(39, 79%, 50%);
+}
+
+.img img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+pre {
+  overflow: auto;
+}
