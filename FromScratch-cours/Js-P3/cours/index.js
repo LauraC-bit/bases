@@ -62,15 +62,36 @@ document.body.addEventListener('click', (e) => {
 // let array3 = ["Javascript", "Php", "Python"];
 // let array4 = ["Ruby", "Solidity"];
 
-document.body.innerHTML = data
-    .filter((user) => user.pseudo.includes("a"))
-    .sort((a, b) => b.age - a.age)
-    .map(
-        (user) =>
-        `<div class ="user-card">
-            <h2> ${user.pseudo}</h2>
-            <p>Age: ${user.age} ans</p>
-            <p>Status: ${user.admin ? "Modérateur" : "Membre"}</p>
-        </div>`
-    )
-    .join("");
+// document.body.innerHTML = data
+//     .filter((user) => user.pseudo.includes("a"))
+//     .sort((a, b) => b.age - a.age)
+//     .map(
+//         (user) =>
+//         `<div class ="user-card">
+//             <h2> ${user.pseudo}</h2>
+//             <p>Age: ${user.age} ans</p>
+//             <p>Status: ${user.admin ? "Modérateur" : "Membre"}</p>
+//         </div>`
+//     )
+//     .join("");
+
+    // ---------- Les dates --------------------------------
+
+let date = new Date();
+
+function dateParser(chaine) {
+    let newDate = new Date(chaine).toLocaleDateString("fr-FR", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    })
+    return newDate;
+}
+
+// console.log(dateParser(date));
+
+// ----------- Destructuring -----------------------------------
+
+let iso = date.toISOString();
+
+console.log(iso);
