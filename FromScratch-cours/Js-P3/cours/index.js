@@ -95,3 +95,9 @@ function dateParser(chaine) {
 let iso = date.toISOString();
 
 console.log(iso);
+
+// datasets --------------------------
+// regex ------------------------------
+
+let mail = "comtelaurapro@gmail.com";
+console.log(mail.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i));
