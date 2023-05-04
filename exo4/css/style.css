@@ -1,0 +1,89 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size:1.8rem;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #444;
+}
+
+
+@font-face {
+        font-family:"courgette";
+        src: url(../css/ressources/courgette-regular-webfont.woff) format("woff");
+    }
+
+.center, .citation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.citation, .author {
+    margin-right: 10%;
+    padding:10px;
+    background-color: #d7e1ef;
+    margin: 0%;
+
+}
+
+.bleu {
+    font-family: "courgette", cursive;
+    color: #4f89b9;
+}
+
+.courgette {
+    font-family: "courgette", cursive;
+    color: #003884;
+    font-weight: 700;
+}
+
+.drapeau, .geographie {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.statue, .demographie {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.size1 {
+    font-size:4rem;
+}
+
+.size2 {
+    font-size:3.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.size3 {
+    font-size:2.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.align {
+    margin-left: 40px;
+}
+
+.align-reverse {
+    margin-right: 40px;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+.author {
+    font-size:20px;
+    margin: 0;
+    padding: 0;
+}
