@@ -1,0 +1,239 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 32px;
+  font-size: calc(1.2rem + 0.6vmin);
+  font-family: "Open Sans", sans-serif;
+}
+
+/* HEAD */
+
+.head {
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-academy {
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+  background-color: #7e4a7c;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.links li span a {
+  color: white;
+  text-decoration: none;
+  font-size: calc(2rem + 0.6vmin);
+}
+
+a:hover {
+  background-color: white;
+  color: #7e4a7c;
+}
+
+/* TITRES */
+
+.purple-dark {
+  color: #7e4a7c;
+  text-align: center;
+  padding: 18px;
+  font-family: "Economica", sans-serif;
+}
+
+.purple-light {
+  color: #b878b5;
+  font-family: "Economica", sans-serif;
+}
+
+/* ABOUT THE SCHOOL */
+
+.more-button {
+  background-color: #7e4a7c;
+  color: white;
+  text-decoration: none;
+  font-size: calc(1.8rem + 0.6vmin);
+  border-width: 0;
+}
+
+.about-the-school {
+  display: flex;
+}
+
+.img-group {
+  flex: 1 0;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.list1 {
+  flex: 1 0;
+  padding-left: 15px;
+}
+.why-us {
+  flex: 1 0;
+}
+
+.list2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list2 li:before {
+  content: "⮞";
+}
+
+.title-why {
+  color: #7e4a7c;
+  padding: 18px;
+  font-family: "Economica", sans-serif;
+}
+
+.purple-text {
+  color: #7e4a7c;
+  font-weight: 700;
+}
+
+/* OUR TEACHERS */
+
+.teachers {
+  display: flex;
+}
+
+.JH,
+.TG,
+.DP,
+.TW {
+  display: flex;
+  gap: 15px;
+}
+
+.img,
+.teacher {
+  flex: 1 0;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.no {
+  margin: 0;
+  padding: 0;
+}
+
+.size {
+  max-width: 100px;
+  min-height: 50px;
+}
+
+/* TABLE */
+
+.table-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  width: 90%;
+}
+
+.border {
+  border: 1px solid #b878b5;
+  border-collapse: collapse;
+}
+
+.background {
+  background-color: #7e4a7c;
+  color: white;
+}
+
+.backpink {
+  background-color: #ffeefe;
+}
+
+.days {
+  text-align: center;
+  font-weight: 700;
+}
+
+.align {
+  text-align: center;
+}
+
+.padding {
+  padding: 5px;
+}
+
+/* FORM */
+
+.form {
+  border: 1px solid #7e4a7c;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.form1 {
+  background-color: #ffeefe;
+  margin: 20px;
+  padding: 15px;
+  display: flex;
+}
+
+.form2 {
+  background-color: #ffeefe;
+  margin: 20px;
+  padding: 15px;
+}
+
+.table-row-2 {
+  display: flex;
+  justify-content: stretch;
+}
+
+.input1,
+.input2 {
+  flex: 1 0;
+}
+
+.select1,
+.select2,
+.select3 {
+  flex: 1 0;
+}
+
+.button-size {
+  min-height: 50px;
+  border-width: 0;
+  margin-bottom: 20px;
+  padding: 10px;
+}
