@@ -9,6 +9,10 @@ html {
 }
 
 body {
+  margin: 0;
+}
+
+main {
   margin: 0 auto;
   max-width: 1200px;
   padding: 32px;
@@ -17,6 +21,20 @@ body {
 }
 
 /* HEAD */
+
+header {
+  position: relative;
+}
+
+header:before {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #7e4a7c;
+}
 
 .head {
   gap: 40px;
@@ -48,7 +66,12 @@ ul {
   font-size: calc(2rem + 0.6vmin);
 }
 
-a:hover {
+.links li span a:hover {
+  background-color: white;
+  color: #7e4a7c;
+}
+
+button:hover {
   background-color: white;
   color: #7e4a7c;
 }
@@ -79,6 +102,7 @@ a:hover {
 
 .about-the-school {
   display: flex;
+  padding: 40px 64px;
 }
 
 .img-group {
@@ -92,22 +116,32 @@ a:hover {
   flex: 1 0;
   padding-left: 15px;
 }
+
+.list1 p {
+  margin: 0;
+}
+
 .why-us {
   flex: 1 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .list2 {
+  gap: 16px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .list2 li:before {
-  content: "⮞";
+  content: url(./instructions/images/puce-fleche.png);
 }
 
 .title-why {
   color: #7e4a7c;
-  padding: 18px;
+  padding:0;
+  margin: 0;
   font-family: "Economica", sans-serif;
 }
 
@@ -120,6 +154,16 @@ a:hover {
 
 .teachers {
   display: flex;
+  padding: 40px 64px;
+}
+
+@media only screen and (max-width: 1164px) {
+  .teachers {
+    flex-direction: column;
+  }
+  .about-the-school {
+    flex-direction: column;
+  }
 }
 
 .JH,
@@ -128,6 +172,11 @@ a:hover {
 .TW {
   display: flex;
   gap: 15px;
+  margin-bottom: 15px;
+}
+
+.second-row {
+  margin-left: 15px;
 }
 
 .img,
@@ -156,15 +205,17 @@ a:hover {
 .table-flex {
   display: flex;
   justify-content: center;
+  padding: 40px 64px;
 }
 
 .table {
   width: 90%;
+  border-collapse: collapse;
 }
 
-.border {
+.table td, .table th {
   border: 1px solid #b878b5;
-  border-collapse: collapse;
+  padding: 5px;
 }
 
 .background {
@@ -172,7 +223,7 @@ a:hover {
   color: white;
 }
 
-.backpink {
+table td:empty {
   background-color: #ffeefe;
 }
 
@@ -185,9 +236,6 @@ a:hover {
   text-align: center;
 }
 
-.padding {
-  padding: 5px;
-}
 
 /* FORM */
 
@@ -205,14 +253,14 @@ a:hover {
 .form1 {
   background-color: #ffeefe;
   margin: 20px;
-  padding: 15px;
+  padding: 25px;
   display: flex;
 }
 
 .form2 {
   background-color: #ffeefe;
   margin: 20px;
-  padding: 15px;
+  padding: 25px;
 }
 
 .table-row-2 {
@@ -223,12 +271,34 @@ a:hover {
 .input1,
 .input2 {
   flex: 1 0;
+  display: flex;
+}
+
+* label {
+  margin-right: 10px;
+  margin-left:10px;
+}
+
+.input2 label {
+  margin-left: 25px;
+}
+
+.form1 input {
+  flex: 1 0;
+  width: 100%;
+  display: flex;
 }
 
 .select1,
 .select2,
 .select3 {
   flex: 1 0;
+  display: flex;
+}
+
+select {
+  flex: 1 0;
+  display:flex;
 }
 
 .button-size {
@@ -236,4 +306,38 @@ a:hover {
   border-width: 0;
   margin-bottom: 20px;
   padding: 10px;
+}
+
+.social {
+  background-color: #7e4a7c;
+  justify-content: center;
+  gap: 32px;
+  display: flex;
+  margin-top: 50px;
+  padding: 20px;
+
+}
+
+.social a {
+  min-width: 30px;
+  min-height: 30px;
+  display: block;
+  background-image: url(./instructions/images/reseaux.png);
+  background-position: 0 30px;
+}
+
+.social a:hover {
+  background-color: white;
+}
+
+.social a:nth-child(2) {
+  background-position: -30px 30px;
+}
+
+.social a:nth-child(3) {
+  background-position: -60px 30px;
+}
+
+.social a:nth-child(4) {
+  background-position: -90px 30px;
 }
