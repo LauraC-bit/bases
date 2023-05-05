@@ -1,0 +1,39 @@
+body {
+  background-color: skyblue;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.red {
+  background-color: indianred;
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+}
+
+.yellow {
+  background-color: yellow;
+  min-width: 40px;
+  max-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+
+.green {
+  background-color: green;
+  max-width: 300px;
+  max-height: 300px;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
