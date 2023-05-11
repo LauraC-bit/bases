@@ -1,0 +1,39 @@
+.main__second {
+  --main__second-padding: 8px;
+  margin-bottom: 500px;
+}
+
+.main__second__txt {
+  display: flex;
+  justify-content: center;
+}
+
+.main__second__txt__ul {
+  display: flex;
+  gap: 20px;
+}
+
+.main__second__txt__ul ul {
+  box-shadow: var(--shadow);
+}
+
+.main__second__txt__ul li {
+  display: flex;
+  min-width: 250px;
+}
+
+.main__second__txt__ul-2 {
+  padding: calc(var(--main__second-padding) + 16px);
+  text-align: center;
+}
+
+.main__second__txt__ul-2 h3 {
+  padding: var(--main__second-padding);
+}
+
+.main__second__txt__ul-2 li::before {
+  content: "\2192";
+  color: var(--green);
+  font-size: 20px;
+  padding-right: 8px;
+}
