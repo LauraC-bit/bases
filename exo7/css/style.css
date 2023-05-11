@@ -1,0 +1,250 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+/* BARRE */
+
+@media only screen and (max-width: 1100px) {
+  .barre {
+    flex-direction: column;
+    align-items: center;
+  }
+  .barre-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menu {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .menu {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .barre {
+    flex-direction: column;
+    align-items: center;
+  }
+  .barre-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .prestation {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.barre {
+  display: flex;
+  background-color: #00748d;
+  width: 100%;
+  min-height: 75px;
+}
+
+.barre:last-child {
+  background-image: url(../instructions/images/path.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.path {
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 350px;
+  min-height: 100px;
+  flex: 1 0;
+}
+
+.logo img {
+  flex: 1 0;
+  max-width: 150px;
+  max-height: 25px;
+  padding-right: 8px;
+}
+
+.titre-logo {
+  flex: 1 0;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  display: flex;
+  align-items: baseline;
+}
+
+.menu {
+  width: 100%;
+  height: auto;
+  flex: 1 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.barre-nav li {
+  padding: 10px;
+}
+
+.barre-nav li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Fjalla One", sans-serif;
+  padding: 15px;
+}
+
+.barre-nav li a:hover {
+  background-color: white;
+  color: #00748d;
+  padding: 15px;
+}
+
+/* MAIN */
+
+.container {
+  font-family: "Nunito", sans-serif;
+}
+
+.bg-header {
+  position: relative;
+  z-index: 1;
+}
+
+.conception {
+  background-color: #cb8606;
+  color: white;
+  font-weight: 700;
+  padding: 5px;
+  max-width: 300px;
+  max-height: 300px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+}
+
+.notre-metier {
+  background-color: white;
+  color: #00748d;
+  font-weight: 700;
+  padding: 5px;
+  max-width: 450px;
+  max-height: 300px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+}
+
+/* PRESTATIONS */
+
+.prestation {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prestations-title {
+  color: #00748d;
+  font-weight: 700;
+  text-align: center;
+  padding: 40px;
+}
+
+.prestations-title h3::before {
+  content: "-";
+  color: #cb8606;
+  padding: 5px;
+}
+
+.prestations-title h3::after {
+  content: "-";
+  color: #cb8606;
+  padding: 5px;
+}
+
+.logo-yellow {
+  min-width: 20px;
+  min-height: 20px;
+  background-color: #cb8606;
+}
+
+.prest1,
+.prest2,
+.prest3,
+.prest4 {
+  flex: 1 0;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-yellow-placement {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+  padding: 8px;
+}
+
+.prestation button {
+  background-color: #00748d;
+  color: white;
+  padding: 5px;
+  min-width: 150px;
+}
+
+/* PRESTATAIRES */
+
+.img-prestataires {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+
+.img-prestataires img {
+  max-width: 150px;
+  max-height: 150px;
+  box-shadow: 0px 0px 2px 2px #00748d;
+}
+
+/* FOOTER */
+
+.reseaux {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.reseaux a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-image: url(../instructions/images/reseaux.png);
+  background-position-x: 0px;
+  background-position-y: 30px;
+}
+
+.reseaux a:hover {
+  background-color: white;
+  color: #00748d;
+}
+
+.reseaux a:nth-child(2) {
+  background-position-x: -30px;
+}
