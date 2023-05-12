@@ -19,7 +19,18 @@
 
 .main__second__txt__ul li {
   display: flex;
+  align-items: center;
   min-width: 250px;
+  gap: 8px;
+}
+
+.main__second__txt__ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main__second__txt__ul li a:hover {
+  color: var(--green);
 }
 
 .main__second__txt__ul-2 {
@@ -32,8 +43,18 @@
 }
 
 .main__second__txt__ul-2 li::before {
-  content: "\2192";
-  color: var(--green);
-  font-size: 20px;
-  padding-right: 8px;
+  content: ">";
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 1;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.main__second__txt__ul-2 li:hover:before {
+    transform: translateX(8px);
 }

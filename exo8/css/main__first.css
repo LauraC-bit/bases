@@ -53,3 +53,7 @@
   margin-top: 8px;
   margin-bottom: 30px;
 }
+
+.main__first button:hover {
+  background-color: var(--hover-green);
+}
