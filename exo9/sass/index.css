@@ -829,6 +829,18 @@ p {
   color: var(--primary-color);
   transition: var(--primary-transition);
 }
+@media only screen and (max-width: 1000px) {
+  .footer__rights a {
+    display: contents;
+    padding: 16px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footer__rights {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 
 body {
   background-color: #0f1116;
