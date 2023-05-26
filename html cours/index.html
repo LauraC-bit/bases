@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Cours HTML</title>
+    <!-- titre du naviguateur -->
+    <link rel="shortcut icon" href="logo.png">
+    <!-- logo -->
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Titre</h1>
+            <p>Texte basique. <em>Voici un texte en italique.</em></p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque vel accusamus soluta sint fugiat, doloribus autem at quod delectus, quasi laudantium placeat possimus distinctio saepe dolor earum modi voluptate neque.</p>
+            <p><strong>Photo:</strong></p>
+            <img src="christmas.jpeg" alt="christmas-picture" height="200">
+            <h2>Liste</h2>
+            <ul>
+                <li>items</li>
+                <li>items</li>
+            </ul>
+
+            <ol>
+                <li>Items rangés</li>
+                <li>Items rangés</li>
+            </ol>
+            <h3>Tableau</h3>
+            <table border="1" width="50%">
+                <!-- Légende -->
+                <caption>Population d'Europe</caption>
+                <!-- En-tête -->
+                <thead>
+                    <tr>
+                        <th>Pays</th>
+                        <th>Population</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <!-- Corps du tableau -->
+                <tbody>
+                    <tr>
+                        <td>France</td>
+                        <td>66M</td>
+                    </tr>
+                    <tr>
+                        <td>Allemagne</td>
+                        <td>82M</td>
+                    </tr>
+                    <tr>
+                        <td>Espagne</td>
+                        <td>47M</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4><span>&#10084;</span>Liens</h4>
+            <a href="https://htmlcheatsheet.com/"target="_blank">Html Cheat Sheet</a><br>
+            <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank"> Icones en HTML</a>
+            <h5>Vidéos</h5>
+            <video src="mer-vid.mp4" autoplay loop muted height="200"</video>
+        </div>
+    </section>
+    <br>
+        <!-- Formulaire -->
+    <section>
+        <div>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+        <label for="name">Nom : </label>
+        <input id="name" type="text" placehorder=""Entrez votre nom"><br>
+        <label for="age">Age : </label> 
+        <input id="age" type="number" min="0" max="99" step="1" value="18"><br>
+        </div>
+
+        <!-- Input Select -->
+        <div>
+        <label for="gender">Genre : </label>
+        <select id="gender">
+            <option selected value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="autre">Autre</option>
+        </select><br>
+        </div>
+
+        <!-- Input Radio -->
+        <div>
+            <input type="radio" name="type" checked id="human">
+            <label for="human">Humain</label>
+            <input type="radio" name="type"id="dog">
+            <label for="dog">Chien</label>
+            <input type="radio" name="type"id="cat">
+            <label for="cat">Chat</label>
+        </div><br>
+
+            <!-- Text Area -->
+        <div>
+            <textarea cols="30" rows="10" placeholder="Entrez votre message ici..."></textarea><br>
+        </div>
+
+            <!-- Input Checkbox -->
+        <div>
+            <label><input type="checkbox"Accepter les CGV></label><br>
+            <input type="submit" value="Valider">
+        </div>
+
+
+    </form>
+    </section>
+    <br>
+    <!-- Mail et envoie de fichiers -->
+    <footer>
+        <a href="mailto:comtelaurapro@gmail.com">Ecrivez-moi!</a>
+        <br>
+        <a href="notice.txt" download="notice.txt">Téléchargez la notice ! </a>
+    </footer>
+</body>
+</html>
